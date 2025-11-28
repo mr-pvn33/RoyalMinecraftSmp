@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM SMP | Welcome</title>
+    <link rel="icon" type="image/png" href="media/fevicon.png">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar"> 
+      <a  class="desktop_navbar_link">Checkout Awesome Ranks on our Store!</a>   
+      </div>
+    </nav>
+    <div class="mobile_navbar">
+      <div id="mobile_navbar_links">
+        <a  class="desktop_navbar_link">Checkout Awesome Ranks on our Store!</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+              const menuButton = document.querySelector(".mobile_navbar .icon"); 
+              const navbarLinks = document.querySelector("#mobile_navbar_links");                  
+              menuButton.addEventListener("click", () => {
+                  navbarLinks.classList.toggle("active"); 
+              });
+          });
+      </script>      
+    </div>   
+    <div class="mainflex">
+      <div class="main1">
+        <a href="store.html" class="store_button">
+          <img src="media/arrow.png"  class="icon">
+          Store
+      </a>
+        <div class="stats">
+          <div class="stat minecraft-stat" onclick="copyText()">
+                <div class="icon">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="texts">
+                  <h5 class="stat-title" id="minecraftServer">play.rsmp.fun</h5>
+                    <p>
+                        <span class="stat-number minecraft-span" id="minecraftServer"></span>Click to copy
+                    </p>
+                </div>
+            </div>
+        <div class="stat discord-stat" onclick="window.open('https://discord.gg/Mg8vU3QrGZ', '_blank')">
+            <div class="icon">
+                <i class="fa-brands fa-discord"></i>
+            </div>
+            <div class="texts">
+                <h8 class="stat-title">Discord server</h8>
+                <pp><span class="stat-number discord-online-users">0</span>Click To Join </pp>
+            </div>
+          
+          </div>
+      </div>
+<div id="popup" class="popup">
+  <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">×</span>
+      <h2 class="popup-header">PLAY.RSMP.FUN</h2>
+      <p class="popup-subheader"><b class="green">ip Copied!</b> We hope to see you online soon.</p>
+      <button id="okBtn" class="ok-btn" onclick="closePopup()">OK</button>
+  </div>
+</div>
+      <script>
+        function copyText() {
+            var copyText = document.getElementById("minecraftServer").textContent;
+            var tempInput = document.createElement("input");
+            tempInput.value = copyText;
+            document.body.appendChild(tempInput);                  
+            tempInput.select();
+            document.execCommand("copy");         
+            document.body.removeChild(tempInput);
+            showPopup();
+        }
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "flex"; 
+            setTimeout(function () {
+                closePopup();
+            }, 3000);
+        }
+    function closePopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "none"; 
+    }    
+    </script>
+        <a class="main1_logo_a" href="#">
+          <img class="main1_logo" src="media/logo.png" alt="logo">
+        </a>
+        <div class="main1_layout">
+        </div>
+      </div>
+      </div>   
+      <div id="characters"></div>
+      <div class="main2">
+    <div class="headline_container">
+        <div class="headline1">RM SMP</div>
+        <div class="subtext1">
+            Meet the Team of Our Minecraft Server Network – The admin, mod, and helper Who Make It All Happen!
+        </div>
+
+        <div class="team_cards">
+            <div class="card">
+                <img src="media/images (8).png" alt="Owner - [RGC]PVN" class="card_image">
+                <h4 class="card_title">Owner</h4>
+                <h4 class="card_subtitle">[RGC]PVN</h4>
+            </div>
+
+            <div class="card">
+                <img src="media/images (10).png" alt="Admin - Mr.PM" class="card_image">
+                <h4 class="card_title">Admin</h4>
+                <h4 class="card_subtitle">Mr.PM</h4>
+            </div>
+
+            <div class="card">
+                <img src="media/images (9).png" alt="Mod - Mr.Vedant" class="card_image">
+                <h4 class="card_title">Mod</h4>
+                <h4 class="card_subtitle">Mr.Vedant</h4>
+            </div>
+
+            <div class="card">
+                <img src="media/images (12).png" alt="Mod - Prashant" class="card_image">
+                <h4 class="card_title">Mod</h4>
+                <h4 class="card_subtitle">Prashant</h4>
+            </div>
+
+            <div class="card">
+                <img src="media/ggg.png" alt="Helper - Mr.Yash" class="card_image">
+                <h4 class="card_title">Helper</h4>
+                <h4 class="card_subtitle">Mr.Yash</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <section id="minigames">
+            <div class="content miniGames-list">
+                <div class="game">
+                    <img src="media/lobby.png" alt="Survival image">
+                    <div class="info">
+                        <h2 class="section-title">Spawn Lobby</h2>
+                        <div class="game-description">
+                            <p>The RM SMP spawn lobby gives players a clean, simple start. Leaderboards, NPC's, and info spots are easy to find, and the Random Teleport lets players jump straight into survival. Crates are also available in the lobby for opening rewards whenever you want. The layout keeps everything relaxed and easy to navigate.</p>
+                            <ul class="services">
+                                <li class="service">Active NPCs for everything.</li>
+                                <li class="service">Leaderboards showing top players and stats.</li>
+                                <li class="service">Random Teleport to jump into survival instantly.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>     
+                <div class="game">
+                    <img src="media/crates.png" alt="Survival image">
+                    <div class="info">
+                        <h2 class="section-title">Crates Area</h2>
+                        <div class="game-description">
+                            <p>The Crates Area is the place where players can unlock rewards and progress faster. Each crate offers a different type of loot, ranging from basic resources to rare items and special gear. The setup is easy to use, and everything is organized so players can open crates quickly without confusion.</p>
+                            <ul class="services">
+                                <li class="service">Multiple crate types with unique rewards</li>
+                                <li class="service">Clean layout for fast opening</li>
+                                <li class="service">Use /warps → Crates to teleport to the crate zone</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                       <div class="game">
+                    <img src="media/solocloudbanner.png" alt="Survival image">
+                    <div class="info">
+<h2 class="section-title">We Are Hosted by SoloCloud</h2>
+<div class="game-description">
+    <p>Our Minecraft server is powered by SoloCloud, a reliable cloud service provider that offers flexible and scalable hosting with multiple locations. Here’s why we chose them: Our server benefits from their high-performance infrastructure and 24/7 support, ensuring smooth gameplay and minimal downtime.</p>
+<ul class="service-list">
+    <div class="links-title">LINKS:-</div>
+    <li class="service">Website: <a href="https://solocloud.host/" target="_blank">https://solocloud.host/</a></li>
+    <li class="service">Billing: <a href="https://billing.solocloud.host/" target="_blank">https://billing.solocloud.host/</a></li>
+    <li class="service">Discord: <a href="https://discord.gg/solocloud" target="_blank">https://discord.gg/solocloud</a></li>
+</ul>
+
+<style>
+
+.game-description {
+    margin-bottom: 5px; 
+}
+
+.links-title {
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+
+.service-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.service-list li {
+    margin-bottom: 2px; 
+}
+
+.service-list a {
+    color: #1E90FF; 
+    text-decoration: underline;
+}
+</style>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+      </div>      
+    <footer class="copyright_div">
+      <a href="https://discord.gg/Mg8vU3QrGZ" class="copyright">Copyright © RoyalMinecraftSmp 2025. All Rights Reserved.</a>
+      <a class="subcopyright">We are not affiliated with Mojang AB.</a>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>
